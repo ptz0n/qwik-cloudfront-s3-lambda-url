@@ -23,6 +23,9 @@ Resources:
       Handler: entry_aws-lambda.qwikApp
       # TODO: Explore streaming responses.
       # InvokeMode: RESPONSE_STREAM
+      Environment:
+        Variables:
+          ORIGIN: !Join ['', [https://, !GetAtt CDN.DomainName]]
 
   SSRPermission:
     Type: AWS::Lambda::Permission
