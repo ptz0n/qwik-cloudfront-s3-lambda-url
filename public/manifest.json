@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "qwik-aws",
+  "short_name": "Qwik on AWS",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Qwik app deployment to AWS CloudFront, S3 and Lambda Function URL using CloudFormation."
+}

@@ -1,0 +1,44 @@
+{
+  "name": "qwik-cloudfront-s3-lambda-url",
+  "description": "proof of concept running a Qwik app on AWS behind CloudFront with two origins.",
+  "scripts": {
+    "build": "qwik build",
+    "build.client": "vite build",
+    "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.server": "vite build -c adapters/aws-lambda/vite.config.ts",
+    "build.types": "tsc --incremental --noEmit",
+    "dev": "vite --mode ssr",
+    "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+    "fmt": "prettier --write .",
+    "fmt.check": "prettier --check .",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "preview": "qwik build preview && vite preview --open",
+    "start": "vite --open --mode ssr",
+    "qwik": "qwik"
+  },
+  "private": true,
+  "trustedDependencies": [
+    "sharp"
+  ],
+  "devDependencies": {
+    "@builder.io/qwik": "^1.2.15",
+    "@builder.io/qwik-city": "^1.2.15",
+    "@types/eslint": "^8.44.4",
+    "@types/node": "^20.8.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint": "^8.51.0",
+    "eslint-plugin-qwik": "^1.2.15",
+    "node-fetch": "3.2.10",
+    "prettier": "^3.0.3",
+    "serverless-http": "^3.2.0",
+    "source-map-support": "^0.5.21",
+    "typescript": "^5.2.2",
+    "undici": "^5.26.0",
+    "vite": "^4.4.11",
+    "vite-tsconfig-paths": "^4.2.1"
+  },
+  "engines": {
+    "node": ">=15.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "first-product",
+    "title": "Dining table",
+    "price": 900
+  },
+  {
+    "slug": "second-product",
+    "title": "Lounge chair",
+    "price": 450
+  }
+]

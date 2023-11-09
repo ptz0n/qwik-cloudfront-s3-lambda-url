@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+  background: #f4f4f4;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #555;
+  line-height: 2.4rem;
+  font-size: 16px;
+  font-family: sans-serif;
+  padding: 1em;
+}
+
+a {
+  color: #0266a9;
+  text-decoration: none;
+  border-bottom: .1em solid;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
